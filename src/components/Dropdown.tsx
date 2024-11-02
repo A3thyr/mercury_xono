@@ -40,7 +40,7 @@ export const Dropdown = () => {
       <div className="flex flex-col relative z-50 max-md:w-fit">
         <div
           onClick={openDropdown}
-          className="text-white rounded-[80px] px-4 py-2 flex items-center gap-1 text-[12px] md:text-[16px] leading-[16px] cursor-pointer max-md:text-[18px] max-md:text-white max-md:pl-0 max-md:w-fit"
+          className="text-white rounded-[80px] px-4 md:py-2 py-0  flex items-center gap-1 text-[12px] md:text-[16px] leading-[16px] cursor-pointer max-md:text-[18px] max-md:text-white max-md:pl-0 max-md:w-fit"
         >
           {locale === "en"
             ? "English"

@@ -1,25 +1,28 @@
+import { useMemo } from "react";
 import { Typography } from "../ui/Typography";
 
-const statArray = [
-  {
-    digit: "5 year",
-    description: "Experience",
-  },
-  {
-    digit: "10",
-    description: "Completed Projects",
-  },
-  {
-    digit: "5",
-    description: "Employees",
-  },
-  {
-    digit: "40+",
-    description: "Worldwide Clients",
-  },
-];
-
 export const Stats = () => {
+  const statArray = useMemo(
+    () => [
+      {
+        digit: "5 year",
+        description: "Experience",
+      },
+      {
+        digit: "10",
+        description: "Completed Projects",
+      },
+      {
+        digit: "5",
+        description: "Employees",
+      },
+      {
+        digit: "40+",
+        description: "Worldwide Clients",
+      },
+    ],
+    []
+  );
   return (
     <div className="flex flex-col m-[0_auto] md:flex-row mt-[45px] max-w-[85%]  md:max-w-[1240px] rounded-[32px] items-center justify-center md:justify-between gap-[15px] md:px-[64px] bg-[#3D3D543D] md:py-[64px] py-[29px] backdrop-blur-lg">
       {statArray.map((stat, index) => (

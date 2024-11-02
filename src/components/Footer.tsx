@@ -3,7 +3,7 @@ import TgIcon from "../assets/tgicon.svg";
 
 export const Footer = () => {
   return (
-    <footer className=" m-[0_auto]  px-4  bg-[#2834301A] backdrop-blur-2xl max-md:pb-[50px]">
+    <footer className=" m-[0_auto]  px-4  bg-[#2834301A] backdrop-blur-lg max-md:pb-[50px]">
       <div className="py-[21.37px] md:py-[40px] flex flex-col md:m-[0_auto] md:max-w-[1240px] md:flex-row  gap-6 md:gap-[137px]">
         <div className="flex flex-col gap-2">
           <div className="w-full">

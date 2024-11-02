@@ -1,6 +1,6 @@
 import { twMerge } from "tailwind-merge";
 import { Typography } from "../ui/Typography";
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 
 export const Reviews = () => {
   const reviewsArray = useMemo(
@@ -50,12 +50,18 @@ export const Reviews = () => {
     ],
     []
   );
+
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
     <div className="flex flex-col gap-2  py-[50px] md:py-[128px]">
       <div className="w-full flex items-center justify-center  gap-[8px] relative overflow-hidden h-[186px] md:h-[248px]">
         {reviewsArray.map((item, index) => (
           <div
             key={`review-key-${index}`}
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+            style={{ animationPlayState: isHovered ? "paused" : "running" }}
             className={twMerge(
               "itemReviewsLeft",
               `item${index}`,
@@ -95,6 +101,9 @@ export const Reviews = () => {
         {reviewsArray.map((item, index) => (
           <div
             key={`review-key-${index}`}
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+            style={{ animationPlayState: isHovered ? "paused" : "running" }}
             className={twMerge(
               "itemReviewsRight",
               `item${index}`,

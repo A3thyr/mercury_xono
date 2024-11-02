@@ -6,17 +6,21 @@
 
 body {
   overflow-x: hidden;
-  background-color: black;
+  background-color: #1a1b1e;
   margin: 0;
   scroll-behavior: smooth;
   @media (min-width: 768px) {
-    background-image: url("/desktopBg.png");
+    background-image: url("/dora_wrap.svg");
     background-size: cover;
   }
   @media (max-width: 768px) {
-    background-image: url("/mobileFix.png");
+    background-image: url("/mobilebg.svg");
     background-size: cover;
   }
+}
+
+*::-webkit-scrollbar {
+  display: none;
 }
 
 input::-webkit-outer-spin-button,
@@ -43,12 +47,14 @@ input[type="number"] {
 
 .formBg {
   @media (min-width: 768px) {
-    background-image: url("/formbgDesktop.png");
+    background-image: url("/formbgfix.png");
     background-size: cover;
   }
-  @media (max-width: 768px) {
-    background-image: url("/formBg.png");
-    background-size: cover;
+}
+
+@keyframes scrollLeftLogos {
+  to {
+    left: -150px;
   }
 }
 
@@ -66,8 +72,8 @@ input[type="number"] {
 
 .itemLogosDesktop {
   position: absolute;
-  left: max(calc(250px * 6), 100%);
-  animation-name: scrollLeft;
+  left: max(calc(150px * 6), 100%);
+  animation-name: scrollLeftLogos;
   animation-duration: 60s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
@@ -102,36 +108,36 @@ input[type="number"] {
   }
 }
 
-.itemProjectsRight,
-.itemProjectsLeft {
-  animation-timing-function: linear;
-  animation-duration: 60s;
-  animation-iteration-count: infinite;
-  transition: 0.3s all ease-in-out;
+// .itemProjectsRight,
+// .itemProjectsLeft {
+//   animation-timing-function: linear;
+//   animation-duration: 60s;
+//   animation-iteration-count: infinite;
+//   transition: 0.3s all ease-in-out;
 
-  &:hover {
-    transform: scale(1.05);
-    transition: 0.3s all ease-in-out;
-  }
-}
+//   &:hover {
+//     transform: scale(1.05);
+//     transition: 0.3s all ease-in-out;
+//   }
+// }
 
-.itemProjectsLeft {
-  left: max(calc(450px * 6), 100%);
-  animation-name: scrollLeft;
-  @media (max-width: 767px) {
-    left: max(calc(200px * 6), 100%);
-    animation-name: scrollLeft;
-  }
-}
+// .itemProjectsLeft {
+//   left: max(calc(450px * 6), 100%);
+//   animation-name: scrollLeft;
+//   @media (max-width: 767px) {
+//     left: max(calc(200px * 6), 100%);
+//     animation-name: scrollLeft;
+//   }
+// }
 
-.itemProjectsRight {
-  right: max(calc(450px * 6), 100%);
-  animation-name: scrollRight;
-  @media (max-width: 767px) {
-    right: max(calc(200px * 6), 100%);
-    animation-name: scrollRight;
-  }
-}
+// .itemProjectsRight {
+//   right: max(calc(450px * 6), 100%);
+//   animation-name: scrollRight;
+//   @media (max-width: 767px) {
+//     right: max(calc(200px * 6), 100%);
+//     animation-name: scrollRight;
+//   }
+// }
 
 .item0 {
   animation-delay: calc(60s / 6 * (6 - 1) * -1);

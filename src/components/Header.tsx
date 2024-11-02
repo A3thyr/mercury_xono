@@ -46,7 +46,7 @@ export const Header = () => {
   return (
     <header
       className={cn(
-        "fixed left-1/2 -translate-x-[50%] flex w-full justify-between items-center backdrop-blur-lg bg-[#3D3D543D] px-8 max-w-[95%] md:max-w-[85%] m-[0_auto] mt-[9px] md:mt-8 py-2 md:py-4 rounded-[8px] md:rounded-[16px] transition-all duration-300 z-[100000] header_drop ",
+        "fixed left-1/2 -translate-x-[50%] flex w-full justify-between items-center backdrop-blur-lg bg-[#3D3D543D] px-8 max-w-[95%] md:max-w-[85%] m-[0_auto] mt-[9px] md:mt-8 py-4 md:py-4 rounded-[16px] md:rounded-[16px] transition-all duration-300 z-[100000] header_drop ",
         scrolled &&
           "mt-0 md:max-w-full md:mt-0 max-w-full md:rounded-none rounded-t-none max-md:rounded-none",
         isOpen &&
@@ -74,17 +74,17 @@ export const Header = () => {
       </div>
       <button
         onClick={handleClick}
-        className="z-[9999] flex space-y-1 flex-col items-center justify-center md:hidden"
+        className="z-[9999] flex space-y-[7px] flex-col items-center justify-center md:hidden"
       >
         <span
           className={cn(
-            "block w-[14px] h-[2px] rounded-sm bg-white transition-all duration-300",
-            isOpen && " transform rotate-45 translate-y-1"
+            "block w-[18px] h-[2px] rounded-sm bg-white transition-all duration-300",
+            isOpen && " transform rotate-45 translate-y-[7px]"
           )}
         ></span>
         <span
           className={cn(
-            "block w-[14px] h-[2px] rounded-sm bg-white transition-all duration-300",
+            "block w-[18px] h-[2px] rounded-sm bg-white transition-all duration-300",
             isOpen && "transform -rotate-45 -translate-y-[2px]"
           )}
         ></span>

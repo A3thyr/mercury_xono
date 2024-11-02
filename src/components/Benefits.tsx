@@ -4,29 +4,33 @@ import Pie from "../assets/pie.svg";
 import Security from "../assets/security.svg";
 import { Section } from "../ui/Section";
 import { Typography } from "../ui/Typography";
-
-const benefitsArray = [
-  {
-    logo: <Security />,
-    title: "Save time",
-    description: "We always meet deadlines and budgets",
-  },
-  {
-    logo: <Pie />,
-    title: "Transparent processes",
-    description: "We offer a transparent process at all stages of development",
-  },
-  {
-    logo: <Analytics />,
-    title: "Personalised approach",
-    description:
-      "We consider each project individually, taking into account all peculiarities and wishes",
-  },
-];
+import { useMemo } from "react";
 
 export const Benefits = () => {
+  const benefitsArray = useMemo(
+    () => [
+      {
+        logo: <Security />,
+        title: "Save time",
+        description: "We always meet deadlines and budgets",
+      },
+      {
+        logo: <Pie />,
+        title: "Transparent processes",
+        description:
+          "We offer a transparent process at all stages of development",
+      },
+      {
+        logo: <Analytics />,
+        title: "Personalised approach",
+        description:
+          "We consider each project individually, taking into account all peculiarities and wishes",
+      },
+    ],
+    []
+  );
   return (
-    <Section className={twMerge(" pb-[50px]")}>
+    <Section className={twMerge("max-md:pt-[20px] pb-[50px]")}>
       <Typography
         tag="h1"
         className="font-sfProText text-center font-extrabold text-white text-[40px] leading-[47.73px]"

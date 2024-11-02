@@ -1,40 +1,42 @@
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { twMerge } from "tailwind-merge";
-
-const projectArray = [
-  {
-    href: "/",
-  },
-  {
-    href: "/",
-  },
-  {
-    href: "/",
-  },
-  {
-    href: "/",
-  },
-  {
-    href: "/",
-  },
-  {
-    href: "/",
-  },
-];
 
 export const Projects = () => {
   const [isHovered, setIsHovered] = useState(false);
 
+  const projectArray = useMemo(
+    () => [
+      {
+        href: "/",
+      },
+      {
+        href: "/",
+      },
+      {
+        href: "/",
+      },
+      {
+        href: "/",
+      },
+      {
+        href: "/",
+      },
+      {
+        href: "/",
+      },
+    ],
+    []
+  );
   return (
-    <div>
-      <div className="flex flex-col gap-2 ">
+    <>
+      <div className="flex flex-col gap-2 relative  max-w-full  overflow-hidden">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 30 }}
           transition={{ delay: 1 }}
-          className="w-full relative overflow-hidden h-[350px]  pt-[20px] md:h-[490px]"
+          className=" relative flex w-full snap-x gap-2 md:gap-[32px] flex-row overflow-auto  md:h-[490px]"
         >
           {projectArray.map((proj, index) => (
             <div
@@ -43,9 +45,7 @@ export const Projects = () => {
               onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)}
               className={twMerge(
-                "itemProjectsLeft",
-                `item${index}`,
-                "w-[258px] h-[320px] absolute rounded-[16px] md:w-[450px] md:h-[450px] md:rounded-[24px] backdrop-blur-xl bg-[#272A4466]"
+                "w-[258px]  shrink-0 h-[320px] snap-center rounded-[16px] md:w-[450px] md:h-[450px] md:rounded-[24px] backdrop-blur-xl bg-[#272A4466]"
               )}
             >
               <a
@@ -62,7 +62,7 @@ export const Projects = () => {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 30 }}
           transition={{ delay: 1 }}
-          className="w-full relative overflow-hidden h-[350px] pt-[20px] md:h-[490px]"
+          className="w-full relative snap-x gap-2 md:gap-[32px] flex flex-row overflow-auto   md:h-[490px]"
         >
           {projectArray.map((proj, index) => (
             <div
@@ -71,9 +71,7 @@ export const Projects = () => {
               onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)}
               className={twMerge(
-                "itemProjectsRight",
-                `item${index}`,
-                "w-[258px] h-[320px] absolute rounded-[16px] md:w-[450px] md:h-[450px] md:rounded-[24px] backdrop-blur-xl bg-[#272A4466]"
+                "w-[258px]   shrink-0 relative flex snap-x flex-row overflow-auto  h-[350px]  snap-start  rounded-[16px] md:w-[450px] md:h-[450px] md:rounded-[24px] backdrop-blur-xl bg-[#272A4466]"
               )}
             >
               <a
@@ -86,7 +84,7 @@ export const Projects = () => {
           ))}
         </motion.div>
       </div>
-    </div>
+    </>
   );
 };
 

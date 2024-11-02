@@ -41,10 +41,10 @@ export const BurgerMenu = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="fixed top-[4.4%] left-0 w-full h-full backdrop-blur-lg z-[9999] bg-[#3D3D543D]"
+            className="fixed top-[4.4%]  left-0 w-full h-full backdrop-blur-lg z-[9999] bg-[#3D3D543D]"
           >
-            <div className="flex flex-col justify-between h-[80vh] px-8">
-              <div className="flex flex-col gap-4 pt-[20px]">
+            <div className="flex flex-col justify-between pt-[70px] h-[80vh] px-8">
+              <div className="flex flex-col gap-4 ">
                 <a
                   href="#discover"
                   onClick={handleNavigationButton}
@@ -71,7 +71,7 @@ export const BurgerMenu = () => {
                 <Button
                   onClick={handleNavigationButton}
                   href="#contact"
-                  className="font-sfPro font-normal text-[16px] leading-[24px] text-white py-[8px]"
+                  className="font-sfPro font-normal text-[16px] leading-[24px] text-white py-[14px]"
                 >
                   Contact us
                 </Button>
@@ -80,13 +80,13 @@ export const BurgerMenu = () => {
                   <div className="flex items-center gap-2">
                     <a
                       href=""
-                      className=" w-full h-[48px] flex items-center justify-center rounded-lg bg-[#272A4466] backdrop-blur-2xl"
+                      className=" w-full h-[48px] flex items-center justify-center rounded-lg bg-[#272a44a6] backdrop-blur-lg"
                     >
                       <TgBurger />
                     </a>
                     <a
                       href=""
-                      className="w-full h-[48px] flex items-center justify-center rounded-lg bg-[#272A4466] backdrop-blur-2xl"
+                      className="w-full h-[48px] flex items-center justify-center rounded-lg bg-[#272A44a6] backdrop-blur-lg"
                     >
                       <img src="/mail.png" className="w-[20px] h-[20px]" />
                     </a>
