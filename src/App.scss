@@ -10,11 +10,11 @@ body {
   margin: 0;
   scroll-behavior: smooth;
   @media (min-width: 768px) {
-    background-image: url("../public/desktopBg.png");
+    background-image: url("/desktopBg.png");
     background-size: cover;
   }
   @media (max-width: 768px) {
-    background-image: url("../public/mobileFix.png");
+    background-image: url("/mobileFix.png");
     background-size: cover;
   }
 }
@@ -32,22 +32,22 @@ input[type="number"] {
 
 .introBg {
   @media (min-width: 768px) {
-    background-image: url("../public/desktopIntro.png");
+    background-image: url("/desktopIntro.png");
     background-size: cover;
   }
   @media (max-width: 768px) {
-    background-image: url("../public/mobileIntro.png");
+    background-image: url("/mobileIntro.png");
     background-size: cover;
   }
 }
 
 .formBg {
   @media (min-width: 768px) {
-    background-image: url("../public/formbgDesktop.png");
+    background-image: url("/formbgDesktop.png");
     background-size: cover;
   }
   @media (max-width: 768px) {
-    background-image: url("../public/formBg.png");
+    background-image: url("/formBg.png");
     background-size: cover;
   }
 }
