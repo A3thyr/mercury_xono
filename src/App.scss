@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./fonts.scss";
+
+body {
+  overflow-x: hidden;
+  background-color: black;
+  margin: 0;
+  scroll-behavior: smooth;
+  @media (min-width: 768px) {
+    background-image: url("../public/desktopBg.png");
+    background-size: cover;
+  }
+  @media (max-width: 768px) {
+    background-image: url("../public/mobileFix.png");
+    background-size: cover;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+.introBg {
+  @media (min-width: 768px) {
+    background-image: url("../public/desktopIntro.png");
+    background-size: cover;
+  }
+  @media (max-width: 768px) {
+    background-image: url("../public/mobileIntro.png");
+    background-size: cover;
+  }
+}
+
+.formBg {
+  @media (min-width: 768px) {
+    background-image: url("../public/formbgDesktop.png");
+    background-size: cover;
+  }
+  @media (max-width: 768px) {
+    background-image: url("../public/formBg.png");
+    background-size: cover;
+  }
+}
+
+@keyframes scrollLeft {
+  to {
+    left: -450px;
+  }
+}
+
+@keyframes scrollRight {
+  to {
+    right: -450px;
+  }
+}
+
+.itemLogosDesktop {
+  position: absolute;
+  left: max(calc(250px * 6), 100%);
+  animation-name: scrollLeft;
+  animation-duration: 60s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  // @media screen and (max-width: 820px) {
+  //     width: 150px;
+  //     height: 150px;
+  //     left: max(calc(150px * 12), 100%);
+  // }
+}
+
+.itemReviewsRight,
+.itemReviewsLeft {
+  animation-duration: 60s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.itemReviewsRight {
+  right: max(calc(392px * 6), 100%);
+  animation-name: scrollRight;
+  @media (max-width: 767px) {
+    right: max(calc(210px * 6), 100%);
+  }
+}
+
+.itemReviewsLeft {
+  left: max(calc(392px * 6), 100%);
+  animation-name: scrollLeft;
+  @media (max-width: 767px) {
+    left: max(calc(210px * 6), 100%);
+  }
+}
+
+.itemProjectsRight,
+.itemProjectsLeft {
+  animation-timing-function: linear;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  transition: 0.3s all ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+    transition: 0.3s all ease-in-out;
+  }
+}
+
+.itemProjectsLeft {
+  left: max(calc(450px * 6), 100%);
+  animation-name: scrollLeft;
+  @media (max-width: 767px) {
+    left: max(calc(200px * 6), 100%);
+    animation-name: scrollLeft;
+  }
+}
+
+.itemProjectsRight {
+  right: max(calc(450px * 6), 100%);
+  animation-name: scrollRight;
+  @media (max-width: 767px) {
+    right: max(calc(200px * 6), 100%);
+    animation-name: scrollRight;
+  }
+}
+
+.item0 {
+  animation-delay: calc(60s / 6 * (6 - 1) * -1);
+}
+
+.item1 {
+  animation-delay: calc(60s / 6 * (6 - 2) * -1);
+}
+
+.item2 {
+  animation-delay: calc(60s / 6 * (6 - 3) * -1);
+}
+
+.item3 {
+  animation-delay: calc(60s / 6 * (6 - 4) * -1);
+}
+
+.item4 {
+  animation-delay: calc(60s / 6 * (6 - 5) * -1);
+}
+
+.item5 {
+  animation-delay: calc(60s / 6 * (6 - 6) * -1);
+}
