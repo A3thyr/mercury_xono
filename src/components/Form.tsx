@@ -40,7 +40,11 @@ export const Form = () => {
     <form
       id="contact"
       onSubmit={(e) => e.preventDefault()}
-      className="formBg relative h-[690px] md:h-[790px] backdrop-blur-2xl"
+      className={twMerge(
+        "formBg relative h-[690px] md:h-[900px] backdrop-blur-2xl",
+        window.innerWidth >= 1637 && "md:h-[950px]",
+        window.innerWidth >= 1800 && "md:h-[1060px]"
+      )}
     >
       <img
         src="/6.png"
@@ -48,7 +52,13 @@ export const Form = () => {
         className="absolute w-full h-[690px] md:hidden"
       />
 
-      <Section className={twMerge("md:max-w-[85%] md:gap-[24px] z-[999]")}>
+      <Section
+        className={twMerge(
+          "md:max-w-[85%] md:gap-[24px] z-[999]",
+          window.innerWidth >= 1637 && "md:pt-[168px]",
+          window.innerWidth >= 1800 && "md:pt-[238px]"
+        )}
+      >
         <Typography
           tag="h1"
           className="font-mont font-bold text-white text-[40px] leading-[48.76px]"

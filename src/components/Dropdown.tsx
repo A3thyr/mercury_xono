@@ -57,7 +57,12 @@ export const Dropdown = () => {
         </div>
         <AnimatePresence>
           {isOpen && (
-            <motion.ul className="flex flex-col transition-all absolute top-[70px] list-none m-0 z-[50] p-2 gap-2 w-[120px] rounded bg-[#3D3D543D] backdrop-blur-2xl">
+            <motion.ul
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              className="flex flex-col transition-all absolute top-[40px] list-none m-0 z-[50] p-2 gap-2 w-[120px] rounded bg-[#3D3D543D] backdrop-blur-2xl"
+            >
               {langArray.map((item, index) => (
                 <li
                   value={item.value}

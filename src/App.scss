@@ -19,6 +19,12 @@ body {
   }
 }
 
+#contact,
+#faq,
+#discover {
+  scroll-margin-top: 120px;
+}
+
 *::-webkit-scrollbar {
   display: none;
 }

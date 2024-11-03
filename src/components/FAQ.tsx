@@ -15,7 +15,7 @@ export const FAQ = () => {
     <div id="faq">
       <Section
         className={twMerge(
-          "gap-[23px] max-md:pt-0 max-md:pb-[50px] md:max-w-[1020px]"
+          "gap-[23px] md:pt-0 max-md:pt-0 max-md:pb-[50px] md:max-w-[1020px]"
         )}
       >
         <Typography

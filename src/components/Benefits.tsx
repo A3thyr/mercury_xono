@@ -30,7 +30,7 @@ export const Benefits = () => {
     []
   );
   return (
-    <Section className={twMerge("max-md:pt-[20px] md:pt-[50px] pb-[50px]")}>
+    <Section className={twMerge("max-md:pt-[20px] md:pt-[50px] pb-[90px]")}>
       <Typography
         tag="h1"
         className="font-sfProText text-center font-extrabold text-white text-[40px] leading-[47.73px]"
