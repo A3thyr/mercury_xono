@@ -3,6 +3,8 @@ import { twMerge } from "tailwind-merge";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "../../node_modules/swiper/swiper.scss";
 
+import { FreeMode } from "swiper/modules";
+
 export const Projects = () => {
   const projectArray = useMemo(
     () => [
@@ -33,14 +35,16 @@ export const Projects = () => {
     <>
       <Swiper
         slidesPerView={"auto"}
+        freeMode={true}
         spaceBetween={widthForSwiper >= 768 ? "32px" : "8px"}
+        modules={[FreeMode]}
       >
         {projectArray.map((proj, index) => (
           <SwiperSlide
             key={`project-id-${index}`}
             className={twMerge(
               index === length - 1 && "mr-[150px]",
-              "!w-[258px]  shrink-0 h-[320px] snap-center rounded-[16px] md:!w-[450px] md:h-[450px] md:rounded-[24px] backdrop-blur-xl bg-[#272A4466] "
+              "!w-[258px] shrink-0 h-[320px] snap-center rounded-[16px] md:!w-[450px] md:h-[450px] md:rounded-[24px] backdrop-blur-xl bg-[#272A4466] "
             )}
           >
             <a
@@ -55,7 +59,9 @@ export const Projects = () => {
       <div className="w-full h-[8px] md:h-[32px]"></div>
       <Swiper
         slidesPerView={"auto"}
+        freeMode={true}
         spaceBetween={widthForSwiper >= 768 ? "32px" : "8px"}
+        modules={[FreeMode]}
       >
         {projectArray.map((proj, index) => (
           <SwiperSlide

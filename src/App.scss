@@ -44,7 +44,7 @@ input[type="number"] {
   position: relative !important;
   display: flex !important;
   flex-direction: row !important;
-
+  scroll-snap-type: x var(--tw-scroll-snap-strictness);
   width: 100% !important;
   height: 320px !important;
   @media (min-width: 768px) {
