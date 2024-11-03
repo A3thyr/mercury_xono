@@ -6,42 +6,36 @@ export const Reviews = () => {
   const reviewsArray = useMemo(
     () => [
       {
-        img: "/youngmanpfp.png",
         name: "Ethan Parker",
         position: "Senior iOS Engineer",
         description:
           "Working with this team was phenomenal. They transformed our site, strategically enhancing design and development, leading to a tenfold increase in sales. They've exceeded all expectations, blending creativity and effectiveness. Highly recommended.",
       },
       {
-        img: "/oldmanpfp.png",
         name: "Jack Hudson",
         position: "Senior iOS Engineer",
         description:
           "Partnering with this team was the game-changer for our business. They revamped our site, boosting its visual appeal and functionality, which catapulted our sales 10x. Truly top-tier in creativity and execution. Highly commendable!",
       },
       {
-        img: "/oldmanpfp.png",
         name: "Jack Hudson",
         position: "Senior iOS Engineer",
         description:
           "Partnering with this team was the game-changer for our business. They revamped our site, boosting its visual appeal and functionality, which catapulted our sales 10x. Truly top-tier in creativity and execution. Highly commendable!",
       },
       {
-        img: "/oldmanpfp.png",
         name: "Jack Hudson",
         position: "Senior iOS Engineer",
         description:
           "Partnering with this team was the game-changer for our business. They revamped our site, boosting its visual appeal and functionality, which catapulted our sales 10x. Truly top-tier in creativity and execution. Highly commendable!",
       },
       {
-        img: "/oldmanpfp.png",
         name: "Jack Hudson",
         position: "Senior iOS Engineer",
         description:
           "Partnering with this team was the game-changer for our business. They revamped our site, boosting its visual appeal and functionality, which catapulted our sales 10x. Truly top-tier in creativity and execution. Highly commendable!",
       },
       {
-        img: "/oldmanpfp.png",
         name: "Jack Hudson",
         position: "Senior iOS Engineer",
         description:
@@ -68,11 +62,7 @@ export const Reviews = () => {
               "flex flex-col py-[16px] w-[272px] md:h-[248px] md:w-[392px] absolute px-[20px] gap-[8px] md:gap-[32px] bg-[#272B323D] backdrop-blur-lg rounded-[32px] h-[186px]"
             )}
           >
-            <div className="flex items-center gap-[16px] md">
-              <img
-                src={item.img}
-                className="w-[32px] h-[32px] md:w-[48px] md:h-[48px]"
-              />
+            <div className="flex items-center gap-[16px]">
               <div className="flex flex-col">
                 <Typography
                   tag="h5"
@@ -111,7 +101,6 @@ export const Reviews = () => {
             )}
           >
             <div className="flex items-center gap-[16px]">
-              <img src={item.img} className="w-[32px] h-[32px]" />
               <div className="flex flex-col">
                 <Typography
                   tag="h5"

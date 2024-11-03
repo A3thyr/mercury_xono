@@ -10,11 +10,11 @@ export const Dropdown = () => {
   const { locale, setLocale } = useSetLocale();
 
   const openDropdown = () => {
-    if (isOpen === false) {
-      setIsOpen(true);
-    } else {
-      setIsOpen(false);
-    }
+    setIsOpen(true);
+  };
+
+  const closeDropdown = () => {
+    setIsOpen(false);
   };
 
   const setLanguage = (value: string) => {
@@ -37,10 +37,14 @@ export const Dropdown = () => {
   );
   return (
     <div className="relative z-50">
-      <div className="flex flex-col relative z-50 max-md:w-fit">
+      <div
+        onMouseEnter={openDropdown}
+        onMouseLeave={closeDropdown}
+        className="flex flex-col relative z-50 max-md:w-fit transition-all duration-200"
+      >
         <div
           onClick={openDropdown}
-          className="text-white rounded-[80px] px-4 md:py-2 py-0  flex items-center gap-1 text-[12px] md:text-[16px] leading-[16px] cursor-pointer max-md:text-[18px] max-md:text-white max-md:pl-0 max-md:w-fit"
+          className="text-white rounded-[80px] px-4 md:py-2 py-0 transition-all duration-200 flex items-center gap-1 text-[12px] md:text-[16px] leading-[16px] cursor-pointer max-md:text-[18px] max-md:text-white max-md:pl-0 max-md:w-fit"
         >
           {locale === "en"
             ? "English"
@@ -53,7 +57,7 @@ export const Dropdown = () => {
         </div>
         <AnimatePresence>
           {isOpen && (
-            <motion.ul className="flex flex-col absolute top-[70px] list-none m-0 z-[50] p-2 gap-2 w-[120px] rounded bg-[#3D3D543D] backdrop-blur-2xl">
+            <motion.ul className="flex flex-col transition-all absolute top-[70px] list-none m-0 z-[50] p-2 gap-2 w-[120px] rounded bg-[#3D3D543D] backdrop-blur-2xl">
               {langArray.map((item, index) => (
                 <li
                   value={item.value}

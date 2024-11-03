@@ -48,7 +48,7 @@ export const Form = () => {
         className="absolute w-full h-[690px] md:hidden"
       />
 
-      <Section className={twMerge("md:max-w-[85%] md:gap-[24px]")}>
+      <Section className={twMerge("md:max-w-[85%] md:gap-[24px] z-[999]")}>
         <Typography
           tag="h1"
           className="font-mont font-bold text-white text-[40px] leading-[48.76px]"

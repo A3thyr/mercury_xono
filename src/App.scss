@@ -10,11 +10,11 @@ body {
   margin: 0;
   scroll-behavior: smooth;
   @media (min-width: 768px) {
-    background-image: url("/dora_wrap.svg");
+    background-image: url("/Landing\ Page\ \(1\).png");
     background-size: cover;
   }
   @media (max-width: 768px) {
-    background-image: url("/mobilebg.svg");
+    background-image: url("/Mobile\ \(1\).png");
     background-size: cover;
   }
 }
@@ -34,6 +34,18 @@ input[type="number"] {
   -moz-appearance: textfield; /* Firefox */
 }
 
+.swiper-wrapper {
+  position: relative !important;
+  display: flex !important;
+  flex-direction: row !important;
+
+  width: 100% !important;
+  height: 320px !important;
+  @media (min-width: 768px) {
+    height: 490px !important;
+  }
+}
+
 .introBg {
   @media (min-width: 768px) {
     background-image: url("/desktopIntro.png");
@@ -47,7 +59,7 @@ input[type="number"] {
 
 .formBg {
   @media (min-width: 768px) {
-    background-image: url("/formbgfix.png");
+    background-image: url("/formbgFix.png");
     background-size: cover;
   }
 }
@@ -77,12 +89,6 @@ input[type="number"] {
   animation-duration: 60s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-
-  // @media screen and (max-width: 820px) {
-  //     width: 150px;
-  //     height: 150px;
-  //     left: max(calc(150px * 12), 100%);
-  // }
 }
 
 .itemReviewsRight,
@@ -107,37 +113,6 @@ input[type="number"] {
     left: max(calc(210px * 6), 100%);
   }
 }
-
-// .itemProjectsRight,
-// .itemProjectsLeft {
-//   animation-timing-function: linear;
-//   animation-duration: 60s;
-//   animation-iteration-count: infinite;
-//   transition: 0.3s all ease-in-out;
-
-//   &:hover {
-//     transform: scale(1.05);
-//     transition: 0.3s all ease-in-out;
-//   }
-// }
-
-// .itemProjectsLeft {
-//   left: max(calc(450px * 6), 100%);
-//   animation-name: scrollLeft;
-//   @media (max-width: 767px) {
-//     left: max(calc(200px * 6), 100%);
-//     animation-name: scrollLeft;
-//   }
-// }
-
-// .itemProjectsRight {
-//   right: max(calc(450px * 6), 100%);
-//   animation-name: scrollRight;
-//   @media (max-width: 767px) {
-//     right: max(calc(200px * 6), 100%);
-//     animation-name: scrollRight;
-//   }
-// }
 
 .item0 {
   animation-delay: calc(60s / 6 * (6 - 1) * -1);

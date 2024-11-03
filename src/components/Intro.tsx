@@ -9,7 +9,7 @@ export const Intro = () => {
   return (
     <Section
       className={cn(
-        "items-center justify-center pb-[65px] gap-[24px] md:gap-[32px] md:h-[812px] h-[300px] md:m-0 md:max-w-full",
+        "items-center justify-center pb-[65px] gap-[24px] md:gap-[32px] md:h-[912px] h-[300px] md:m-0 md:max-w-full",
         "introBg"
       )}
     >

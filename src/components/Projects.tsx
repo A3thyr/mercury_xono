@@ -1,10 +1,9 @@
-import { motion } from "framer-motion";
-import { useMemo, useState } from "react";
+import { useMemo } from "react";
 import { twMerge } from "tailwind-merge";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "../../node_modules/swiper/swiper.scss";
 
 export const Projects = () => {
-  const [isHovered, setIsHovered] = useState(false);
-
   const projectArray = useMemo(
     () => [
       {
@@ -28,62 +27,53 @@ export const Projects = () => {
     ],
     []
   );
+
+  const widthForSwiper = Math.max(window.innerWidth || 0);
   return (
     <>
-      <div className="flex flex-col gap-2 relative  max-w-full  overflow-hidden">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: 30 }}
-          transition={{ delay: 1 }}
-          className=" relative flex w-full snap-x gap-2 md:gap-[32px] flex-row overflow-auto  md:h-[490px]"
-        >
-          {projectArray.map((proj, index) => (
-            <div
-              key={`project-id-${index}`}
-              style={{ animationPlayState: isHovered ? "paused" : "running" }}
-              onMouseEnter={() => setIsHovered(true)}
-              onMouseLeave={() => setIsHovered(false)}
-              className={twMerge(
-                "w-[258px]  shrink-0 h-[320px] snap-center rounded-[16px] md:w-[450px] md:h-[450px] md:rounded-[24px] backdrop-blur-xl bg-[#272A4466]"
-              )}
+      <Swiper
+        slidesPerView={"auto"}
+        spaceBetween={widthForSwiper >= 768 ? "32px" : "8px"}
+      >
+        {projectArray.map((proj, index) => (
+          <SwiperSlide
+            key={`project-id-${index}`}
+            className={twMerge(
+              index === length - 1 && "mr-[150px]",
+              "!w-[258px]  shrink-0 h-[320px] snap-center rounded-[16px] md:!w-[450px] md:h-[450px] md:rounded-[24px] backdrop-blur-xl bg-[#272A4466] "
+            )}
+          >
+            <a
+              href={`${proj.href}`}
+              className="bg-white rounded-[50%] flex items-center justify-center py-[8.5px] absolute bottom-[24px] right-[24px] px-[11px]"
             >
-              <a
-                href={`${proj.href}`}
-                className="bg-white rounded-[50%] flex items-center justify-center py-[8.5px] absolute bottom-[24px] right-[24px] px-[11px]"
-              >
-                <RightArrow />
-              </a>
-            </div>
-          ))}
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: 30 }}
-          transition={{ delay: 1 }}
-          className="w-full relative snap-x gap-2 md:gap-[32px] flex flex-row overflow-auto   md:h-[490px]"
-        >
-          {projectArray.map((proj, index) => (
-            <div
-              key={`project-id-${index}`}
-              style={{ animationPlayState: isHovered ? "paused" : "running" }}
-              onMouseEnter={() => setIsHovered(true)}
-              onMouseLeave={() => setIsHovered(false)}
-              className={twMerge(
-                "w-[258px]   shrink-0 relative flex snap-x flex-row overflow-auto  h-[350px]  snap-start  rounded-[16px] md:w-[450px] md:h-[450px] md:rounded-[24px] backdrop-blur-xl bg-[#272A4466]"
-              )}
+              <RightArrow />
+            </a>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+      <div className="w-full h-[8px] md:h-[32px]"></div>
+      <Swiper
+        slidesPerView={"auto"}
+        spaceBetween={widthForSwiper >= 768 ? "32px" : "8px"}
+      >
+        {projectArray.map((proj, index) => (
+          <SwiperSlide
+            key={`project-id-${index}`}
+            className={twMerge(
+              index === length - 1 && "mr-[150px]",
+              "!w-[258px]  shrink-0 h-[320px] snap-center rounded-[16px] md:!w-[450px] md:h-[450px] md:rounded-[24px] backdrop-blur-xl bg-[#272A4466] "
+            )}
+          >
+            <a
+              href={`${proj.href}`}
+              className="bg-white rounded-[50%] flex items-center justify-center py-[8.5px] absolute bottom-[24px] right-[24px] px-[11px]"
             >
-              <a
-                href={`${proj.href}`}
-                className="bg-white rounded-[50%] flex items-center justify-center py-[8.5px] absolute bottom-[24px] right-[24px] px-[11px]"
-              >
-                <RightArrow />
-              </a>
-            </div>
-          ))}
-        </motion.div>
-      </div>
+              <RightArrow />
+            </a>
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </>
   );
 };
