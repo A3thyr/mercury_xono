@@ -7,7 +7,9 @@ export const Discover = () => {
   const { t } = useTranslation();
   return (
     <div id="discover">
-      <Section className={twMerge("max-md:pt-[20px] max-md:pb-[40px]")}>
+      <Section
+        className={twMerge("max-md:pt-[20px] max-md:pb-[40px] md:pb-[64px]")}
+      >
         <Typography
           tag="h1"
           className=" font-sfProText text-center font-extrabold text-[40px] leading-[47.73px] text-white"
