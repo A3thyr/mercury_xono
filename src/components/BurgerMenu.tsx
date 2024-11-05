@@ -50,21 +50,21 @@ export const BurgerMenu = () => {
                   onClick={handleNavigationButton}
                   className="font-sfPro font-medium text-[28px] leading-[32px] tracking-[-0.02%] text-white"
                 >
-                  Discover our projects
+                  {t("burgermenu.btns.projects")}
                 </a>
                 <a
                   href="#benefits"
                   onClick={handleNavigationButton}
                   className="font-sfPro font-medium text-[28px] leading-[32px] tracking-[-0.02%] text-white"
                 >
-                  Our benefits
+                  {t("burgermenu.btns.benefits")}
                 </a>
                 <a
                   href="#faq"
                   onClick={handleNavigationButton}
                   className="font-sfPro font-medium text-[28px] leading-[32px] tracking-[-0.02%] text-white"
                 >
-                  FAQ
+                  {t("burgermenu.btns.faq")}
                 </a>
               </div>
               <div className="flex flex-col gap-[40px]">
@@ -73,7 +73,7 @@ export const BurgerMenu = () => {
                   href="#contact"
                   className="font-sfPro font-normal text-[16px] leading-[24px] text-white py-[14px]"
                 >
-                  Contact us
+                  {t("burgermenu.btns.contact")}
                 </Button>
                 <div className="pt-4 border-t border-[#2B2B2B] flex flex-col gap-4">
                   <Dropdown />

@@ -1,7 +1,9 @@
 import { Typography } from "../ui/Typography";
 import TgIcon from "../assets/tgicon.svg";
+import { useTranslation } from "react-i18next";
 
 export const Footer = () => {
+  const { t } = useTranslation();
   return (
     <footer className=" m-[0_auto]  px-4  bg-[#2834301A] backdrop-blur-lg max-md:pb-[50px]">
       <div className="py-[21.37px] md:py-[40px] flex flex-col md:m-[0_auto] md:max-w-[1240px] md:flex-row  gap-6 md:gap-[137px]">
@@ -18,7 +20,7 @@ export const Footer = () => {
               tag="p"
               className="font-sfPro font-normal text-[12px] md:text-[16px] md:leading-[24px] md:tracking-[-3%] leading-[16px] text-[#ADB2B1]"
             >
-              Creating the future of visual graphics
+              {t("footer.description")}
             </Typography>
           </div>
         </div>
@@ -29,20 +31,20 @@ export const Footer = () => {
                 tag="p"
                 className="font-sfPro font-semibold  md:text-[16px] md:leading-[24px] text-[12px] leading-[16px] text-white"
               >
-                Info
+                {t("footer.info.title")}
               </Typography>
             </div>
             <a
               href=""
               className="cursor-pointer text-[#ADB2B1] md:text-[16px] md:leading-[24px] font-sfPro font-normal text-[12px] leading-[16px]"
             >
-              Term & Condition
+              {t("footer.info.terms")}
             </a>
             <a
               href=""
               className="cursor-pointer text-[#ADB2B1] md:text-[16px] md:leading-[24px] font-sfPro font-normal text-[12px] leading-[16px]"
             >
-              Privacy policy
+              {t("footer.info.policy")}
             </a>
           </li>
           <li className="flex flex-col gap-2">
@@ -51,17 +53,19 @@ export const Footer = () => {
                 tag="p"
                 className="font-sfPro font-semibold  md:text-[16px] md:leading-[24px] text-[12px] leading-[16px] text-white"
               >
-                Write to us!
+                {t("footer.write")}
               </Typography>
             </div>
             <a
-              href=""
+              href="mailto:deal@mercurycgi.one"
+              target="_blank"
               className="cursor-pointer text-[#ADB2B1] md:text-[16px] md:leading-[24px] font-sfPro font-normal text-[12px] leading-[16px] flex items-center"
             >
               ✉️ deal@mercurycgi.one
             </a>
             <a
-              href=""
+              href="https://t.me/mercurycgi"
+              target="_blank"
               className="cursor-pointer gap-2 text-[#ADB2B1] md:text-[16px] md:leading-[24px] font-sfPro font-normal text-[12px] leading-[16px] flex items-center"
             >
               <TgIcon />
@@ -74,23 +78,20 @@ export const Footer = () => {
                 tag="p"
                 className="font-sfPro font-semibold  md:text-[16px] md:leading-[24px] text-[12px] leading-[16px] text-white"
               >
-                Socials
+                {t("footer.socials")}
               </Typography>
             </div>
             <a
-              href=""
+              href="https://www.behance.net/mercurycgi"
+              target="_blank"
               className="cursor-pointer text-[#ADB2B1] md:text-[16px] md:leading-[24px] font-sfPro font-normal text-[12px] leading-[16px]"
             >
               Behance
             </a>
+
             <a
-              href=""
-              className="cursor-pointer text-[#ADB2B1] md:text-[16px] md:leading-[24px] font-sfPro font-normal text-[12px] leading-[16px]"
-            >
-              Instagram
-            </a>
-            <a
-              href=""
+              href="https://t.me/mercurycgi"
+              target="_blank"
               className="cursor-pointer text-[#ADB2B1] md:text-[16px] md:leading-[24px] font-sfPro font-normal text-[12px] leading-[16px]"
             >
               Telegram

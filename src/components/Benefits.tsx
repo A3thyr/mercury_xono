@@ -5,29 +5,29 @@ import Security from "../assets/security.svg";
 import { Section } from "../ui/Section";
 import { Typography } from "../ui/Typography";
 import { useMemo } from "react";
+import { useTranslation } from "react-i18next";
 
 export const Benefits = () => {
+  const { t } = useTranslation();
   const benefitsArray = useMemo(
     () => [
       {
         logo: <Security />,
-        title: "Save time",
-        description: "We always meet deadlines and budgets",
+        title: t("benefits.first.title"),
+        description: t("benefits.first.description"),
       },
       {
         logo: <Pie />,
-        title: "Transparent processes",
-        description:
-          "We offer a transparent process at all stages of development",
+        title: t("benefits.second.title"),
+        description: t("benefits.second.description"),
       },
       {
         logo: <Analytics />,
-        title: "Personalised approach",
-        description:
-          "We consider each project individually, taking into account all peculiarities and wishes",
+        title: t("benefits.third.title"),
+        description: t("benefits.third.description"),
       },
     ],
-    []
+    [t]
   );
   return (
     <Section className={twMerge("max-md:pt-[20px] md:pt-[50px] pb-[90px]")}>
@@ -35,7 +35,7 @@ export const Benefits = () => {
         tag="h1"
         className="font-sfProText text-center font-extrabold text-white text-[40px] leading-[47.73px]"
       >
-        Our benefits
+        {t("benefits.title")}
       </Typography>
       <div
         id="benefits"

@@ -1,4 +1,119 @@
 {
   "rights": "© 2024. All rights reserved.",
-  "policy": "Terms and conditions"
+  "policy": "Terms and conditions",
+  "header": {
+    "contact-btn": "Contact us"
+  },
+  "discover": "Discover our projects",
+  "intro": {
+    "description": "Creating the future of visual graphics",
+    "btn": "Discover us"
+  },
+  "stats": {
+    "first": {
+      "digit": "5 year",
+      "description": "Experience"
+    },
+    "second": {
+      "digit": "10",
+      "description": "Completed Projects"
+    },
+    "third": {
+      "digit": "5",
+      "description": "Employees"
+    },
+    "forth": {
+      "digit": "40+",
+      "description": "Worldwide Clients"
+    }
+  },
+  "benefits": {
+    "title": "Our benefits",
+    "first": {
+      "title": "Save time",
+      "description": "We always meet deadlines and budgets"
+    },
+    "second": {
+      "title": "Transparent processes",
+      "description": "We offer a transparent process at all stages of development"
+    },
+    "third": {
+      "title": "Personalised approach",
+      "description": "We consider each project individually, taking into account all peculiarities and wishes"
+    }
+  },
+  "form": {
+    "title": "Write to us!",
+    "btns": {
+      "mail": "Mail",
+      "send": "Send",
+      "sending": "Sending..."
+    },
+    "request": "Or leave a request",
+    "placeholders": {
+      "name": "Your name",
+      "mail": "Telegram or email",
+      "notes": "Enter your notes here"
+    }
+  },
+  "reviews": {
+    "user1": {
+      "name": "Ethan Parker",
+      "position": "Senior iOS Engineer",
+      "description": "Working with this team was phenomenal. They transformed our site, strategically enhancing design and development, leading to a tenfold increase in sales. They've exceeded all expectations, blending creativity and effectiveness. Highly recommended."
+    },
+    "user2": {
+      "name": "Jack Hudson",
+      "position": "Senior iOS Engineer",
+      "description": "Partnering with this team was the game-changer for our business. They revamped our site, boosting its visual appeal and functionality, which catapulted our sales 10x. Truly top-tier in creativity and execution. Highly commendable!"
+    }
+  },
+  "faq": {
+    "item1": {
+      "question": "What credit score do I need to apply for a credit card?",
+      "answer": "The required credit score may vary depending on the specific credit card. Generally, a good to excellent credit score (typically 670 or above) increases your chances of approval for premium credit cards."
+    },
+    "item2": {
+      "question": "How can I apply for a credit card online?",
+      "answer": "Applying for a credit card online is simple. Just visit our website, select the desired credit card, and click on the 'Apply Now' button. Follow the instructions, provide your information, and submit your application securely."
+    },
+    "item3": {
+      "question": "Are there any annual fees associated with the credit card?",
+      "answer": "Annual fees may apply to some credit cards, but not all. Our credit card details page will specify if there are any annual fees associated with the card you're interested in."
+    },
+    "item4": {
+      "question": "How long does it take to receive the credit card once approved?",
+      "answer": "Once your credit card application is approved, it typically takes 7 to 10 business days to receive your physical card by mail. You can start using your virtual card immediately after approval for online purchases."
+    },
+    "item5": {
+      "question": "How can I check my credit card balance and transactions?",
+      "answer": "You can easily check your credit card balance and transactions through our secure online banking portal or mobile app. Simply log in to your account to access your credit card information."
+    },
+    "item6": {
+      "question": "What should I do if my credit card is lost or stolen?",
+      "answer": "If your credit card is lost or stolen, please notify us immediately through our customer support line or online banking. We will assist you in securing your account and issuing a replacement card."
+    },
+    "item7": {
+      "question": "Is my credit card information secure?",
+      "answer": "Yes, we prioritize the security of your information. Our credit card systems use encryption and industry-standard security measures to protect your data, ensuring a safe and seamless experience."
+    }
+  },
+  "footer": {
+    "description": "Creating the future of visual graphics",
+    "info": {
+      "title": "Info",
+      "terms": "Terms and conditions",
+      "policy": "Privacy policy"
+    },
+    "write": "Write to us!",
+    "socials": "Socials"
+  },
+  "burgermenu": {
+    "btns": {
+      "projects": "Discover our projects",
+      "benefits": "Our benefits",
+      "faq": "FAQ",
+      "contact": " Contact us"
+    }
+  }
 }

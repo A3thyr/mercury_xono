@@ -36,7 +36,7 @@ export const Projects = () => {
       <Swiper
         slidesPerView={"auto"}
         freeMode={true}
-        spaceBetween={widthForSwiper >= 768 ? "32px" : "8px"}
+        spaceBetween={widthForSwiper >= 768 ? "32px" : "12px"}
         modules={[FreeMode]}
       >
         {projectArray.map((proj, index) => (
@@ -44,7 +44,8 @@ export const Projects = () => {
             key={`project-id-${index}`}
             className={twMerge(
               index === length - 1 && "mr-[150px]",
-              "!w-[258px] shrink-0 h-[320px] snap-center rounded-[16px] md:!w-[450px] md:h-[450px] md:rounded-[24px] backdrop-blur-xl bg-[#272A4466] "
+              "!w-[258px] shrink-0 !h-[320px]  snap-center rounded-[16px] md:!w-[450px] md:!h-[450px] md:rounded-[24px] backdrop-blur-xl bg-[#272A4466] ",
+              "slide"
             )}
           >
             <a
@@ -56,11 +57,11 @@ export const Projects = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className="w-full h-[8px] md:h-[32px]"></div>
+
       <Swiper
         slidesPerView={"auto"}
         freeMode={true}
-        spaceBetween={widthForSwiper >= 768 ? "32px" : "8px"}
+        spaceBetween={widthForSwiper >= 768 ? "32px" : "12px"}
         modules={[FreeMode]}
       >
         {projectArray.map((proj, index) => (
@@ -68,7 +69,8 @@ export const Projects = () => {
             key={`project-id-${index}`}
             className={twMerge(
               index === length - 1 && "mr-[150px]",
-              "!w-[258px]  shrink-0 h-[320px] snap-center rounded-[16px] md:!w-[450px] md:h-[450px] md:rounded-[24px] backdrop-blur-xl bg-[#272A4466] "
+              "!w-[258px]  shrink-0 !h-[320px] snap-center transform hover:scale-105 transition-all rounded-[16px] md:!w-[450px] md:!h-[450px] md:rounded-[24px] backdrop-blur-xl bg-[#272A4466] ",
+              "slide"
             )}
           >
             <a

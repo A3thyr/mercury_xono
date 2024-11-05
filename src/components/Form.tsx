@@ -5,6 +5,7 @@ import { Typography } from "../ui/Typography";
 // import { sendEmail } from "../utils/sendEmail";
 import { sendMessage } from "../utils/sendMessage";
 import { twMerge } from "tailwind-merge";
+import { useTranslation } from "react-i18next";
 // import toast from "react-hot-toast";
 
 export const Form = () => {
@@ -12,6 +13,8 @@ export const Form = () => {
   const [contact, setContact] = useState("");
   const [message, setMessage] = useState("");
   const [isSending, setIsSending] = useState(false);
+
+  const { t } = useTranslation();
 
   const handleSendMessage = async () => {
     if (!name || !contact || !message) {
@@ -63,17 +66,25 @@ export const Form = () => {
           tag="h1"
           className="font-mont font-bold text-white text-[40px] leading-[48.76px]"
         >
-          Write to us!
+          {t("form.title")}
         </Typography>
         <div className="flex items-center gap-[24px]">
           <Button className="font-sfPro font-medium text-white text-[12px] md:text-[16px] leading-[24px] px-[30px] md:px-[61px] md:py-[16px] py-[4.5px]">
-            Telegram
+            <a
+              href="https://t.me/mercurycgi"
+              target="_blank"
+              className="font-sfPro font-medium text-white text-[12px] md:text-[16px] leading-[24px]"
+            >
+              Telegram
+            </a>
           </Button>
           <Button
             variant="secondary"
             className="font-sfPro font-medium text-white text-[12px] md:text-[16px] leading-[24px] px-[30px] md:px-[55px] md:py-[16px] py-[4.5px]"
           >
-            Mail
+            <a href="mailto:deal@mercurycgi.one" target="_blank">
+              {t("form.btns.mail")}
+            </a>
           </Button>
         </div>
         <div className="flex flex-col gap-[20px] md:max-w-[520px]">
@@ -81,18 +92,18 @@ export const Form = () => {
             tag="h2"
             className="font-mont font-semibold text-white text-[30px] leading-[36.57px]"
           >
-            Or leave a request
+            {t("form.request")}
           </Typography>
           <div className="flex flex-col gap-[16px]">
             <input
-              placeholder="Your name"
+              placeholder={t("form.placeholders.name")}
               required
               name="name"
               onChange={(e) => setName(e.target.value)}
               className="border-[2px] border-[#F2F2F7] outline-none text-white border-solid rounded-[8px] p-4 bg-transparent font-sfPro font-normal text-[16px] leading-[24px] placeholder:text-white"
             />
             <input
-              placeholder="Telegram or email"
+              placeholder={t("form.placeholders.mail")}
               required
               name="senderEmail"
               onChange={(e) => setContact(e.target.value)}
@@ -100,7 +111,7 @@ export const Form = () => {
             />
           </div>
           <textarea
-            placeholder="Enter your notes here"
+            placeholder={t("form.placeholders.notes")}
             required
             name="message"
             onChange={(e) => setMessage(e.target.value)}
@@ -111,7 +122,7 @@ export const Form = () => {
             disabled={isSending || !name || !contact || !message}
             className="w-fit font-sfPro font-medium text-white disabled:bg-slate-500 text-[12px] transition duration-150 md:text-[16px] md:py-[18px] md:px-[66px] leading-[16px] px-[32px] py-[8px]"
           >
-            {isSending ? "Sending..." : "Send"}
+            {isSending ? t("form.btns.sending") : t("form.btns.send")}
           </Button>
         </div>
       </Section>

@@ -26,7 +26,7 @@ export const Button: ButtonComponent = ({
     <button
       // href={`${href}`}
       className={cn(
-        "z-[2] flex items-center justify-center rounded-[80px] text-white transition-all duration-300",
+        "z-[2] flex items-center justify-center rounded-[80px] text-white transition-all duration-300 hover:scale-105",
         variants[variant],
         className
       )}

@@ -8,6 +8,7 @@ import { Button } from "../ui/Button";
 // import { BurgerMenu } from "./BurgerMenu";
 import { Dropdown } from "./Dropdown";
 import { useBurgerMenu } from "../store/useBurgerMenu";
+import { useTranslation } from "react-i18next";
 // import { Dropdown } from "./Dropdown/Dropdown";
 // import { BurgerMenu } from "./BurgerMenu";
 // import { useBurgerMenu } from "@/utils/context/BurgerContext";
@@ -18,6 +19,8 @@ export const Header = () => {
   const { isOpen, setIsClose, setIsOpen } = useBurgerMenu();
 
   const [scrolled, setScrolled] = useState(false);
+
+  const { t } = useTranslation();
 
   const handleClick = () => {
     if (isOpen === false) {
@@ -67,7 +70,7 @@ export const Header = () => {
           href="#contact"
           className="text-[16px] leading-4 font-normal py-2 h-[32px] px-4"
         >
-          Contact us
+          {t("header.contact-btn")}
         </Button>
 
         <Dropdown />

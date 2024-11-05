@@ -4,8 +4,11 @@ import { Section } from "../ui/Section";
 import { Typography } from "../ui/Typography";
 import { AnchorEvent } from "../utils/AnchorEvent";
 import { cn } from "../utils/cn";
+import { useTranslation } from "react-i18next";
 
 export const Intro = () => {
+  const { t } = useTranslation();
+
   return (
     <Section
       className={cn(
@@ -24,7 +27,7 @@ export const Intro = () => {
         tag="span"
         className="w-full text-center md:font-sfCompact md:font-light md:text-[30px] md:leading-[35.8px] text-white font-mont font-medium text-[20px] leading-[24.38px]"
       >
-        Creating the future of visual graphics
+        {t("intro.description")}
       </Typography>
       <Button
         onClick={AnchorEvent}
@@ -33,7 +36,7 @@ export const Intro = () => {
           "font-sfPro font-normal text-[12px] leading-[16px] md:text-[16px] md:py-[14.5px] md:px-[51.5px] py-[8px] px-[16px]"
         )}
       >
-        Discover us
+        {t("intro.btn")}
       </Button>
     </Section>
   );

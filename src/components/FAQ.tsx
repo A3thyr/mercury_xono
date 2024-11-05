@@ -1,9 +1,9 @@
 import { twMerge } from "tailwind-merge";
 import { Section } from "../ui/Section";
 import { Typography } from "../ui/Typography";
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { FaqItem } from "./FaqItem";
-import { FaqItems } from "../utils/array/faqitems";
+import { useTranslation } from "react-i18next";
 
 export const FAQ = () => {
   const [isOpen, setIsOpen] = useState<number | null>(null);
@@ -11,6 +11,41 @@ export const FAQ = () => {
   const handleClick = (index: number) => {
     setIsOpen(isOpen === index ? null : index);
   };
+
+  const { t } = useTranslation();
+  const faqData = useMemo(
+    () => [
+      {
+        question: t("faq.item1.question"),
+        answer: t("faq.item1.answer"),
+      },
+      {
+        question: t("faq.item2.question"),
+        answer: t("faq.item2.answer"),
+      },
+      {
+        question: t("faq.item3.question"),
+        answer: t("faq.item.answer"),
+      },
+      {
+        question: t("faq.item4.question"),
+        answer: t("faq.item4.answer"),
+      },
+      {
+        question: t("faq.item5.question"),
+        answer: t("faq.item5.answer"),
+      },
+      {
+        question: t("faq.item6.question"),
+        answer: t("faq.item6.answer"),
+      },
+      {
+        question: t("faq.item7.question"),
+        answer: t("faq.item7.answer"),
+      },
+    ],
+    [t]
+  );
   return (
     <div id="faq">
       <Section
@@ -25,7 +60,7 @@ export const FAQ = () => {
           FAQ
         </Typography>
         <div className="flex flex-col gap-[24px]">
-          {FaqItems().map((item, index) => (
+          {faqData.map((item, index) => (
             <FaqItem
               index={index}
               question={item.question}

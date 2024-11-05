@@ -44,11 +44,12 @@ input[type="number"] {
   position: relative !important;
   display: flex !important;
   flex-direction: row !important;
+  align-items: center;
   scroll-snap-type: x var(--tw-scroll-snap-strictness);
   width: 100% !important;
-  height: 320px !important;
+  height: 335px !important;
   @media (min-width: 768px) {
-    height: 490px !important;
+    height: 500px !important;
   }
 }
 
@@ -117,6 +118,15 @@ input[type="number"] {
   animation-name: scrollLeft;
   @media (max-width: 767px) {
     left: max(calc(210px * 6), 100%);
+  }
+}
+
+.slide {
+  transition: 0.3s all ease-in-out;
+
+  &:hover {
+    transform: scale(1.05) !important;
+    transition: 0.3s all ease-in-out;
   }
 }
 

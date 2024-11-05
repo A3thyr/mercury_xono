@@ -1,48 +1,45 @@
 import { twMerge } from "tailwind-merge";
 import { Typography } from "../ui/Typography";
 import { useMemo, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 export const Reviews = () => {
+  const { t } = useTranslation();
+
   const reviewsArray = useMemo(
     () => [
       {
-        name: "Ethan Parker",
-        position: "Senior iOS Engineer",
-        description:
-          "Working with this team was phenomenal. They transformed our site, strategically enhancing design and development, leading to a tenfold increase in sales. They've exceeded all expectations, blending creativity and effectiveness. Highly recommended.",
+        name: t("reviews.user1.name"),
+        position: t("reviews.user1.position"),
+        description: t("reviews.user1.description"),
       },
       {
-        name: "Jack Hudson",
-        position: "Senior iOS Engineer",
-        description:
-          "Partnering with this team was the game-changer for our business. They revamped our site, boosting its visual appeal and functionality, which catapulted our sales 10x. Truly top-tier in creativity and execution. Highly commendable!",
+        name: t("reviews.user2.name"),
+        position: t("reviews.user2.position"),
+        description: t("reviews.user2.description"),
       },
       {
-        name: "Jack Hudson",
-        position: "Senior iOS Engineer",
-        description:
-          "Partnering with this team was the game-changer for our business. They revamped our site, boosting its visual appeal and functionality, which catapulted our sales 10x. Truly top-tier in creativity and execution. Highly commendable!",
+        name: t("reviews.user2.name"),
+        position: t("reviews.user2.position"),
+        description: t("reviews.user2.description"),
       },
       {
-        name: "Jack Hudson",
-        position: "Senior iOS Engineer",
-        description:
-          "Partnering with this team was the game-changer for our business. They revamped our site, boosting its visual appeal and functionality, which catapulted our sales 10x. Truly top-tier in creativity and execution. Highly commendable!",
+        name: t("reviews.user2.name"),
+        position: t("reviews.user2.position"),
+        description: t("reviews.user2.description"),
       },
       {
-        name: "Jack Hudson",
-        position: "Senior iOS Engineer",
-        description:
-          "Partnering with this team was the game-changer for our business. They revamped our site, boosting its visual appeal and functionality, which catapulted our sales 10x. Truly top-tier in creativity and execution. Highly commendable!",
+        name: t("reviews.user2.name"),
+        position: t("reviews.user2.position"),
+        description: t("reviews.user2.description"),
       },
       {
-        name: "Jack Hudson",
-        position: "Senior iOS Engineer",
-        description:
-          "Partnering with this team was the game-changer for our business. They revamped our site, boosting its visual appeal and functionality, which catapulted our sales 10x. Truly top-tier in creativity and execution. Highly commendable!",
+        name: t("reviews.user2.name"),
+        position: t("reviews.user2.position"),
+        description: t("reviews.user2.description"),
       },
     ],
-    []
+    [t]
   );
 
   const [isHovered, setIsHovered] = useState(false);
