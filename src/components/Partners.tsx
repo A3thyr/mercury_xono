@@ -40,7 +40,7 @@ export const Partners = () => {
               key={`logo-key-${index}`}
               className={twMerge(
                 "itemLogosDesktop",
-                `item${index}`,
+                `itemLogos${index}`,
                 "flex items-center justify-center"
               )}
             >

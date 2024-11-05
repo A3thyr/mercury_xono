@@ -25,23 +25,7 @@ export const FAQ = () => {
       },
       {
         question: t("faq.item3.question"),
-        answer: t("faq.item.answer"),
-      },
-      {
-        question: t("faq.item4.question"),
-        answer: t("faq.item4.answer"),
-      },
-      {
-        question: t("faq.item5.question"),
-        answer: t("faq.item5.answer"),
-      },
-      {
-        question: t("faq.item6.question"),
-        answer: t("faq.item6.answer"),
-      },
-      {
-        question: t("faq.item7.question"),
-        answer: t("faq.item7.answer"),
+        answer: t("faq.item3.answer"),
       },
     ],
     [t]

@@ -1,17 +1,17 @@
 {
   "rights": "© 2024. All rights reserved.",
-  "policy": "Terms and conditions",
+  "policy": "Terms and Conditions",
   "header": {
     "contact-btn": "Contact us"
   },
-  "discover": "Discover our projects",
+  "discover": "Explore our projects",
   "intro": {
     "description": "Creating the future of visual graphics",
-    "btn": "Discover us"
+    "btn": "Explore us"
   },
   "stats": {
     "first": {
-      "digit": "5 year",
+      "digit": "5 years",
       "description": "Experience"
     },
     "second": {
@@ -24,22 +24,22 @@
     },
     "forth": {
       "digit": "40+",
-      "description": "Worldwide Clients"
+      "description": "Clients Worldwide"
     }
   },
   "benefits": {
-    "title": "Our benefits",
+    "title": "Our Benefits",
     "first": {
-      "title": "Save time",
-      "description": "We always meet deadlines and budgets"
+      "title": "Save Time",
+      "description": "We always meet deadlines and stay within budget"
     },
     "second": {
-      "title": "Transparent processes",
-      "description": "We offer a transparent process at all stages of development"
+      "title": "Transparent Process",
+      "description": "We offer transparency at every stage of development"
     },
     "third": {
-      "title": "Personalised approach",
-      "description": "We consider each project individually, taking into account all peculiarities and wishes"
+      "title": "Personalized Approach",
+      "description": "We consider each project individually, taking into account all specific needs and preferences"
     }
   },
   "form": {
@@ -58,62 +58,86 @@
   },
   "reviews": {
     "user1": {
-      "name": "Ethan Parker",
-      "position": "Senior iOS Engineer",
-      "description": "Working with this team was phenomenal. They transformed our site, strategically enhancing design and development, leading to a tenfold increase in sales. They've exceeded all expectations, blending creativity and effectiveness. Highly recommended."
+      "name": "Mark",
+      "position": "Animation for Advertising Campaign",
+      "description": "The animation caught the audience's attention, completed on time and with high quality. Particularly impressed with the detail and attention to nuances."
     },
     "user2": {
-      "name": "Jack Hudson",
-      "position": "Senior iOS Engineer",
-      "description": "Partnering with this team was the game-changer for our business. They revamped our site, boosting its visual appeal and functionality, which catapulted our sales 10x. Truly top-tier in creativity and execution. Highly commendable!"
+      "name": "Olga",
+      "position": "Visualization for Architectural Project",
+      "description": "The visualization allowed our clients to see the project in detail before construction. The team took into account all our requests, very pleased with the result."
+    },
+    "user3": {
+      "name": "David",
+      "position": "3D Models for Online Store",
+      "description": "The 3D models look realistic and have greatly enhanced product perception. The work was done professionally and without delays."
+    },
+    "user4": {
+      "name": "Maria",
+      "position": "Animation for Video Game",
+      "description": "The team did an excellent job with character animation, making them lively and engaging for players. The project was completed to all requirements."
+    },
+    "user5": {
+      "name": "Ivan",
+      "position": "3D Reconstruction of Historical Sites",
+      "description": "High-level detailing captured the atmosphere and style of the architecture. The work was done at the highest standard; we will definitely continue collaborating."
+    },
+    "user6": {
+      "name": "Roman",
+      "position": "3D Product Visualization",
+      "description": "The 3D visualization of our product made a strong impression on clients. The image quality and attention to detail were impressive."
+    },
+    "user7": {
+      "name": "Sarah",
+      "position": "Animation for Social Project",
+      "description": "Thank you for the excellent work!"
+    },
+    "user8": {
+      "name": "Alexander",
+      "position": "Visual Effects for Music Video",
+      "description": "The visual effects took the video to a new level. The team handled the task perfectly, achieving a stylish and professional result."
+    },
+    "user9": {
+      "name": "Mike",
+      "position": "3D Characters for Mobile Game",
+      "description": "The characters turned out lively and memorable, just as we wanted. The workflow was transparent, and the result impressed the entire team."
+    },
+    "user10": {
+      "name": "Kristina",
+      "position": "Virtual Tour for Real Estate",
+      "description": "The virtual tour allowed clients to feel as if they were inside the property. Everything was done with quality, even meeting complex requirements."
     }
   },
   "faq": {
     "item1": {
-      "question": "What credit score do I need to apply for a credit card?",
-      "answer": "The required credit score may vary depending on the specific credit card. Generally, a good to excellent credit score (typically 670 or above) increases your chances of approval for premium credit cards."
+      "question": "How long does it take to create 3D models or animations?",
+      "answer": "The development time depends on the complexity and scope of the project. For example, creating a single model may take a few days, while complex projects with animations and visual effects can take several weeks. After discussing the requirements, we will provide a precise timeline."
     },
     "item2": {
-      "question": "How can I apply for a credit card online?",
-      "answer": "Applying for a credit card online is simple. Just visit our website, select the desired credit card, and click on the 'Apply Now' button. Follow the instructions, provide your information, and submit your application securely."
+      "question": "In which fields is 3D visualization used?",
+      "answer": "Our services are in demand in various fields, including architecture, game development, advertising campaigns, product visualization, virtual tours, and more. We tailor our work to client needs, creating visualizations that best meet project goals."
     },
     "item3": {
-      "question": "Are there any annual fees associated with the credit card?",
-      "answer": "Annual fees may apply to some credit cards, but not all. Our credit card details page will specify if there are any annual fees associated with the card you're interested in."
-    },
-    "item4": {
-      "question": "How long does it take to receive the credit card once approved?",
-      "answer": "Once your credit card application is approved, it typically takes 7 to 10 business days to receive your physical card by mail. You can start using your virtual card immediately after approval for online purchases."
-    },
-    "item5": {
-      "question": "How can I check my credit card balance and transactions?",
-      "answer": "You can easily check your credit card balance and transactions through our secure online banking portal or mobile app. Simply log in to your account to access your credit card information."
-    },
-    "item6": {
-      "question": "What should I do if my credit card is lost or stolen?",
-      "answer": "If your credit card is lost or stolen, please notify us immediately through our customer support line or online banking. We will assist you in securing your account and issuing a replacement card."
-    },
-    "item7": {
-      "question": "Is my credit card information secure?",
-      "answer": "Yes, we prioritize the security of your information. Our credit card systems use encryption and industry-standard security measures to protect your data, ensuring a safe and seamless experience."
+      "question": "What initial data is required to start working on a project?",
+      "answer": "To start, we need a project description, drawings, photos, or references. If the project requires high levels of detail, it’s best to provide technical documentation or samples to help us recreate realistic details."
     }
   },
   "footer": {
     "description": "Creating the future of visual graphics",
     "info": {
-      "title": "Info",
-      "terms": "Terms and conditions",
-      "policy": "Privacy policy"
+      "title": "Information",
+      "terms": "Terms and Conditions",
+      "policy": "Privacy Policy"
     },
     "write": "Write to us!",
     "socials": "Socials"
   },
   "burgermenu": {
     "btns": {
-      "projects": "Discover our projects",
-      "benefits": "Our benefits",
+      "projects": "Explore our projects",
+      "benefits": "Our Benefits",
       "faq": "FAQ",
-      "contact": " Contact us"
+      "contact": "Contact us"
     }
   }
 }
